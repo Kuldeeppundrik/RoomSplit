@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roommate expense</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="icon" href="data:">
+</head>
+<body>
+    <div class="container">
+   <h1>Roommate Expense</h1>
+
+   <!-- ROOMMATE SECTION -->
+    <div class ="card">
+        <h2>Add Roommate</h2>
+        <input type="text" id="roommateName" placeholder="Enter roommate name">
+        <button id ="addroommateBtn">Add Roommate Name</button>
+        <ul id="roommateList">
+            <!-- Name will apper here -->
+        </ul>
+    </div>
+    <!-- Expense Section -->
+     <div class="card">
+        <h2>Add Expense</h2>
+        <label for="payer">Paid By:</label>
+        <select id="payer">
+            <option value="" disabled selected>Choose roommate</option>
+        </select>
+<br>
+        <label>Amount:</label>
+        <input type="number" id="addAmount" placeholder="Enter amount">
+<br>
+        <label>Date</label>
+        <input type="date" id="date">
+<br>
+        <label>Description:</label>
+        <input type="text" id="description" placeholder="Enter description">
+<br> 
+        <button  id="addExpenseBtn">Add Expense</button>
+      
+     </div>
+        <!-- Monthly Summary -->
+         <div class="card">
+            <h2>Monthly Summary</h2>
+            <div id="Summary"></div>
+        </div>
+
+        <!-- Expense Table -->
+        <div class="card">
+            <h2>Expense Table</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        
+                        <th>Description</th>
+
+                    </tr>
+                    </thead>
+                    <tbody id="expenseTable">
+                        Expense will appear here
+                    </tbody>
+                
+            </table>
+            
+            <button type="button" id="resetBtn">Reset All</button>
+
+            
+        </div> 
+</div>
+<!-- <img src="image.png"> -->
+<script src="index.js"></script>
+
+</body>
+</html>
